@@ -4,6 +4,8 @@ from .forms import PostModelForm,PostUpdateForm,CommentForm
 from django.contrib.auth.decorators import login_required
 # Create your views here.
 
+
+#Index
 @login_required
 def index(request):
     posts = PostModel.objects.all()
